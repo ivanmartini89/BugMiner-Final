@@ -1,0 +1,9 @@
+
+$mapRedes:(chico:10px, mediano:20px, grande:30px);
+
+@each $tamaños, $size in $mapRedes {
+    .#{$tamaños} {
+        size: $size;
+    }
+}
+

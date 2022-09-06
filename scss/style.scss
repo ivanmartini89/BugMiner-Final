@@ -1,4 +1,6 @@
+@import "maps";
 @import "variables";
+
 
 
 * {
@@ -43,6 +45,18 @@ header {
   }
   h5 {
     font-size: 2.5rem;
+  }
+  .imagenWhatsapp {
+    width: 11rem;
+    height: 4rem;
+    position: fixed;
+    right: 4%;
+    bottom:5% ;
+    z-index: 10;
+  }
+  .imagenWhatsapp:hover {
+    transition: .8s;
+    transform: scale(2);
   }
   .iconoFecha {
     width: 3rem;
@@ -170,10 +184,22 @@ header {
 /////////////////////////////////////////////////
 
 .mainContact {
-  color: #36a0ff;
-  font-size: 27px;
+  color: black;
+  font-size: 1.5rem;
   padding: 10px;
-
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+  h1 {
+    font-size: 5rem;
+    font-weight: bolder;
+    text-shadow: gray 1px 5px;
+    margin-left: 13rem;
+  }
+  
+  .productoMail {
+    margin-left: 10rem;
+  }
   .row {
     width: 100%;
   }
@@ -182,11 +208,15 @@ header {
     color: #36a0ff;
   }
   .container {
-    width: 70rem;
+    margin: 0;
+    width: 42rem;
     height: 50rem;
   }
   .form-group {
-    padding: 1rem;
+    margin: 0;
+    width: 40rem;
+    padding-top: 1rem;
+    
   }
   .iconosForm {
     width: 2.5rem;
@@ -195,7 +225,32 @@ header {
   }
   .nombre {
     display: flex;
+    width: 100%;
   }
+  .oficinas {
+    display: flex;
+    justify-content: space-around;
+  }
+  .office {
+
+     h3 {
+      font-weight: bold;
+      margin-left: 13rem;
+      margin-top: 7rem;
+     }
+     p {
+      margin-left: 13rem;
+     }
+     h4 {
+      display: inline-block;
+      margin-left: 13rem;
+      margin-top: 6rem;
+    }
+    a {
+      margin-left: 13rem;
+    }
+  }
+  
 }
 
 ////////////////////////////////////////////////////////
