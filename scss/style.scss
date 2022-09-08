@@ -12,6 +12,7 @@ html {
 }
 
 header {
+
   .nav-link.active {
     background-color: black;
   }
@@ -22,9 +23,12 @@ header {
   }
   nav {
     height: 5rem;
-    position: sticky;
-    top: 0%;
     font-size: 2rem;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
   }
 }
 
@@ -51,7 +55,7 @@ header {
     height: 4rem;
     position: fixed;
     right: 4%;
-    bottom:5% ;
+    top:80rem ;
     z-index: 10;
   }
   .imagenWhatsapp:hover {
@@ -76,7 +80,7 @@ header {
 
   .cartaPlanta {
     width: 90%;
-    height: 40.1rem;
+    height: 48.3rem;
   }
 }
 
@@ -196,10 +200,6 @@ header {
     text-shadow: gray 1px 5px;
     margin-left: 13rem;
   }
-  
-  .productoMail {
-    margin-left: 10rem;
-  }
   .row {
     width: 100%;
   }
@@ -235,7 +235,7 @@ header {
 
      h3 {
       font-weight: bold;
-      margin-left: 13rem;
+      margin-left: 20rem;
       margin-top: 7rem;
      }
      p {
@@ -243,11 +243,14 @@ header {
      }
      h4 {
       display: inline-block;
-      margin-left: 13rem;
-      margin-top: 6rem;
+      margin-left: 20rem;
+      margin-top: 7rem;
     }
     a {
-      margin-left: 13rem;
+      margin-left: 20rem;
+    }
+    .productoMail  {
+      margin-left: 17.5rem;
     }
   }
   
@@ -312,4 +315,67 @@ footer {
   li {
     display: inline;
   }
+}
+
+
+/*******media query***/
+
+@media (max-width: 600px) {
+.mainIndex {
+  .cartaPlanta {
+    height: 70rem;
+  }
+  .cartas {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+.mainAbout {
+  .bitcoin img {
+    width: 55.3rem;
+  }
+  .padreContenedor {
+    display: flex;
+    flex-direction: column;
+  }
+  .textoAbout {
+    order: 1;
+  }
+}
+.mainContact {
+  display: flex;
+  flex-direction: column;
+  .oficinas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .office h3 {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .office h4 {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .office p {
+    margin-left: 1rem;
+  }
+  .office a {
+    size: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+.mainShop {
+  .item1 {
+    width: 45rem;
+  }
+}
+
+.mainNews {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 }

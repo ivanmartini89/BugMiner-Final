@@ -29,10 +29,12 @@ header .nav-pills {
 }
 header nav {
   height: 5rem;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0%;
   font-size: 2rem;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
 }
 
 .mainIndex {
@@ -57,7 +59,7 @@ header nav {
   height: 4rem;
   position: fixed;
   right: 4%;
-  bottom: 5%;
+  top: 80rem;
   z-index: 10;
 }
 .mainIndex .imagenWhatsapp:hover {
@@ -81,7 +83,7 @@ header nav {
 }
 .mainIndex .cartaPlanta {
   width: 90%;
-  height: 40.1rem;
+  height: 48.3rem;
 }
 
 .mainShop {
@@ -190,9 +192,6 @@ header nav {
   text-shadow: gray 1px 5px;
   margin-left: 13rem;
 }
-.mainContact .productoMail {
-  margin-left: 10rem;
-}
 .mainContact .row {
   width: 100%;
 }
@@ -225,7 +224,7 @@ header nav {
 }
 .mainContact .office h3 {
   font-weight: bold;
-  margin-left: 13rem;
+  margin-left: 20rem;
   margin-top: 7rem;
 }
 .mainContact .office p {
@@ -233,11 +232,14 @@ header nav {
 }
 .mainContact .office h4 {
   display: inline-block;
-  margin-left: 13rem;
-  margin-top: 6rem;
+  margin-left: 20rem;
+  margin-top: 7rem;
 }
 .mainContact .office a {
-  margin-left: 13rem;
+  margin-left: 20rem;
+}
+.mainContact .office .productoMail {
+  margin-left: 17.5rem;
 }
 
 .mainNews {
@@ -291,4 +293,57 @@ footer img {
 }
 footer li {
   display: inline;
+}
+
+/*******media query***/
+@media (max-width: 600px) {
+  .mainIndex .cartaPlanta {
+    height: 70rem;
+  }
+  .mainIndex .cartas {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .mainAbout .bitcoin img {
+    width: 55.3rem;
+  }
+  .mainAbout .padreContenedor {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainAbout .textoAbout {
+    order: 1;
+  }
+  .mainContact {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainContact .oficinas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainContact .office h3 {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .mainContact .office h4 {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .mainContact .office p {
+    margin-left: 1rem;
+  }
+  .mainContact .office a {
+    size: 1rem;
+    margin-left: 1rem;
+  }
+  .mainShop .item1 {
+    width: 45rem;
+  }
+  .mainNews {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */
